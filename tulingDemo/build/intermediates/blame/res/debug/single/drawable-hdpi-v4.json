@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "F:\\AndroidCode\\WerbNews\\tulingDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "F:\\AndroidCode\\WerbNews\\tulingDemo\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\AndroidCode\\WerbNews\\tulingDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\aio_user_bg_nor_11.9.png",
+        "source": "F:\\AndroidCode\\WerbNews\\tulingDemo\\src\\main\\res\\drawable-hdpi\\aio_user_bg_nor_11.9.png"
+    },
+    {
+        "merged": "F:\\AndroidCode\\WerbNews\\tulingDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\aio_friend_bg_nor_11.9.png",
+        "source": "F:\\AndroidCode\\WerbNews\\tulingDemo\\src\\main\\res\\drawable-hdpi\\aio_friend_bg_nor_11.9.png"
+    },
+    {
+        "merged": "F:\\AndroidCode\\WerbNews\\tulingDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\visitor.jpg",
+        "source": "F:\\AndroidCode\\WerbNews\\tulingDemo\\src\\main\\res\\drawable-hdpi\\visitor.jpg"
+    },
+    {
+        "merged": "F:\\AndroidCode\\WerbNews\\tulingDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\robot.jpg",
+        "source": "F:\\AndroidCode\\WerbNews\\tulingDemo\\src\\main\\res\\drawable-hdpi\\robot.jpg"
+    }
+]

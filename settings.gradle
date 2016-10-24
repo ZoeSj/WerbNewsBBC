@@ -1,0 +1,7 @@
+include ':slidingmenulibrary', ':smartlibrary', ':PullToRefresh', ':app11', ':daogenerator', ':app', ':notification', ':webview', ':minibrowser', ':Angry Birds'
+include ':ViewPagerIndicatorLibrary'
+
+
+include ':getMyPhoneNumber'
+include ':tulingDemo'
+include ':helloNotes'

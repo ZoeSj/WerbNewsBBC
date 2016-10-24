@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "F:\\AndroidCode\\WerbNews\\helloNotes\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "F:\\AndroidCode\\WerbNews\\helloNotes\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "F:\\AndroidCode\\WerbNews\\helloNotes\\build\\intermediates\\res\\merged\\debug\\layout\\select.xml",
+        "source": "F:\\AndroidCode\\WerbNews\\helloNotes\\src\\main\\res\\layout\\select.xml"
+    },
+    {
+        "merged": "F:\\AndroidCode\\WerbNews\\helloNotes\\build\\intermediates\\res\\merged\\debug\\layout\\addcontent.xml",
+        "source": "F:\\AndroidCode\\WerbNews\\helloNotes\\src\\main\\res\\layout\\addcontent.xml"
+    },
+    {
+        "merged": "F:\\AndroidCode\\WerbNews\\helloNotes\\build\\intermediates\\res\\merged\\debug\\layout\\cell.xml",
+        "source": "F:\\AndroidCode\\WerbNews\\helloNotes\\src\\main\\res\\layout\\cell.xml"
+    }
+]

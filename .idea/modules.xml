@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Angry Birds/Angry Birds.iml" filepath="$PROJECT_DIR$/Angry Birds/Angry Birds.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PullToRefresh/PullToRefresh.iml" filepath="$PROJECT_DIR$/PullToRefresh/PullToRefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ViewPagerIndicatorLibrary/ViewPagerIndicatorLibrary.iml" filepath="$PROJECT_DIR$/ViewPagerIndicatorLibrary/ViewPagerIndicatorLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WerbNews.iml" filepath="$PROJECT_DIR$/WerbNews.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app11/app11.iml" filepath="$PROJECT_DIR$/app11/app11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/daogenerator/daogenerator.iml" filepath="$PROJECT_DIR$/daogenerator/daogenerator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/getMyPhoneNumber/getMyPhoneNumber.iml" filepath="$PROJECT_DIR$/getMyPhoneNumber/getMyPhoneNumber.iml" />
+      <module fileurl="file://$PROJECT_DIR$/helloNotes/helloNotes.iml" filepath="$PROJECT_DIR$/helloNotes/helloNotes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/minibrowser/minibrowser.iml" filepath="$PROJECT_DIR$/minibrowser/minibrowser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/notification/notification.iml" filepath="$PROJECT_DIR$/notification/notification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/slidingmenulibrary/slidingmenulibrary.iml" filepath="$PROJECT_DIR$/slidingmenulibrary/slidingmenulibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smartlibrary/smartlibrary.iml" filepath="$PROJECT_DIR$/smartlibrary/smartlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tulingDemo/tulingDemo.iml" filepath="$PROJECT_DIR$/tulingDemo/tulingDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webview/webview.iml" filepath="$PROJECT_DIR$/webview/webview.iml" />
+    </modules>
+  </component>
+</project>

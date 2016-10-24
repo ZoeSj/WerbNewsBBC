@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "F:\\AndroidCode\\WerbNews\\tulingDemo\\build\\intermediates\\res\\merged\\debug\\layout\\rightitem.xml",
+        "source": "F:\\AndroidCode\\WerbNews\\tulingDemo\\src\\main\\res\\layout\\rightitem.xml"
+    },
+    {
+        "merged": "F:\\AndroidCode\\WerbNews\\tulingDemo\\build\\intermediates\\res\\merged\\debug\\layout\\leftitem.xml",
+        "source": "F:\\AndroidCode\\WerbNews\\tulingDemo\\src\\main\\res\\layout\\leftitem.xml"
+    },
+    {
+        "merged": "F:\\AndroidCode\\WerbNews\\tulingDemo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "F:\\AndroidCode\\WerbNews\\tulingDemo\\src\\main\\res\\layout\\activity_main.xml"
+    }
+]

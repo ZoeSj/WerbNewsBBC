@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/path_et"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="输入访问网址,直接从www开始即可"
+            android:singleLine="true"/>
+        <Button
+            android:onClick="load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加载"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/webView_pb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:max="100"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:visibility="gone"/>
+
+    <WebView
+        android:id="@+id/show_wb"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+    </WebView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:onClick="advance"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="前进"/>
+        <Button
+            android:onClick="reload"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="刷新"/>
+        <Button
+            android:onClick="retreat"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="后退"/>
+
+    </LinearLayout>
+</LinearLayout>
