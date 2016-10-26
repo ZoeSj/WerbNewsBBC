@@ -1,6 +1,7 @@
 package com.werber.newsbj.base.impl;
 
 import android.app.Activity;
+import android.text.TextUtils;
 import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
@@ -9,6 +10,7 @@ import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import com.werber.newsbj.R;
 import com.werber.newsbj.base.BasePager;
@@ -35,8 +37,8 @@ public class HomePager extends BasePager {
     @Override
     public void initData() {
         mTvTitle.setText("新华BBC");
-        //mImgBtnMenu.setVisibility(View.INVISIBLE);
-        setSlidingMenuEnable(true);
+        mImgBtnMenu.setVisibility(View.INVISIBLE);
+        setSlidingMenuEnable(false);
 
         View view=View.inflate(mActivity, R.layout.homepager,null);
 
@@ -52,10 +54,10 @@ public class HomePager extends BasePager {
             @Override
             public void onClick(View view) {
                 String trim = path_et.getText().toString().trim();
-        /*if(TextUtils.isEmpty(trim)){
-            //Toast.makeText(HomePager.this, "不能输入为空", Toast.LENGTH_SHORT).show();
+        if(TextUtils.isEmpty(trim)){
+            Toast.makeText(mActivity, "不能输入为空", Toast.LENGTH_SHORT).show();
             return;
-        }*/
+        }
 //                加载用户输入的网址
                 show_wb.loadUrl("http://"+trim);
             }
@@ -85,7 +87,7 @@ public class HomePager extends BasePager {
 
         webView_pb = (ProgressBar) view.findViewById(R.id.webView_pb);
 //        加载一个网页的方法
-//        show_wb.loadUrl("http://www.javaapk.com/source/1325.html");
+       show_wb.loadUrl("http://115.159.66.239/JDcom/");
 //        使用webView对象,进行的一些初始化设置
         initWebview();
 //        使用webViewSettings对webVIew进行一系列初始化的设置
@@ -143,7 +145,7 @@ public class HomePager extends BasePager {
             //通过title的参数,可以获取到访问网页的头.
             @Override
             public void onReceivedTitle(WebView view, String title) {
-                //Toast.makeText(HomePager.this, "加载" + title + "中", Toast.LENGTH_SHORT).show();
+                Toast.makeText(mActivity, "加载" + title + "中", Toast.LENGTH_SHORT).show();
                 super.onReceivedTitle(view, title);
             }
         });}
