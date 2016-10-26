@@ -6,6 +6,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
 
+import com.werber.newsbj.R;
 import com.werber.newsbj.base.BaseMenuDetailPager;
 
 /**
@@ -21,12 +22,13 @@ public class InteractMenuDetailPager extends BaseMenuDetailPager {
     @Override
     public View initView() {
 
+        View view=View.inflate(mActivity, R.layout.interact,null);
         TextView text = new TextView(mActivity);
         text.setText("菜单详情页-互动");
         text.setTextSize(25);
         text.setTextColor(Color.RED);
         text.setGravity(Gravity.CENTER);
 
-        return text;
+        return view;
     }
 }
