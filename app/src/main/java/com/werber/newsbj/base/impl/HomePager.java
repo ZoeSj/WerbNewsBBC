@@ -87,7 +87,7 @@ public class HomePager extends BasePager {
 
         webView_pb = (ProgressBar) view.findViewById(R.id.webView_pb);
 //        加载一个网页的方法
-       show_wb.loadUrl("http://115.159.66.239/JDcom/");
+       show_wb.loadUrl("http://115.159.66.239/www/");
 //        使用webView对象,进行的一些初始化设置
         initWebview();
 //        使用webViewSettings对webVIew进行一系列初始化的设置
