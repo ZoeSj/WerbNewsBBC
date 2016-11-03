@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/a3"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="组长盛佳:
+        主要负责框架的搭建,标签页代码的编写以及文档的审阅"/>
+    <TextView
+        android:id="@+id/fragment_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity传来的数据"/>
+
+    <EditText
+        android:id="@+id/fragment_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="callYou" />
+
+    <Button
+        android:id="@+id/fragment_callChild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="yes" />
+
+</LinearLayout>

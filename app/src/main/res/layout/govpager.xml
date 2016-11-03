@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,21 +6,81 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="mystudy.com.notification.MainActivity">
-    <ProgressBar
-        android:id="@+id/webView_pb"
-        android:layout_width="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:max="100"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:visibility="gone"/>
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/Btton_a1"
+            android:background="@drawable/bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a1" />
+        <Button
+            android:id="@+id/Btton_a2"
+            android:background="@drawable/bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a2" />
+        <Button
+            android:id="@+id/Btton_a3"
+            android:background="@drawable/bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a3" />
+        <Button
+            android:id="@+id/Btton_a4"
+            android:background="@drawable/bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a4" />
+        <Button
+            android:id="@+id/Btton_a5"
+            android:background="@drawable/bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a5" />
+        <Button
+            android:id="@+id/Btton_a6"
+            android:background="@drawable/bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a6" />
+        <Button
+            android:id="@+id/Btton_a7"
+            android:background="@drawable/bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a7" />
 
-    <WebView
-        android:id="@+id/show_wb"
-        android:layout_width="match_parent"
-        android:layout_weight="1"
-        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/Activity_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="收到 and 返回"/>
 
-    </WebView>
+        <EditText
+            android:id="@+id/Activity_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="callMe" />
+
+        <Button
+            android:id="@+id/Activity_callChild"
+            android:layout_width="wrap_content"
+            android:background="@drawable/bg"
+            android:layout_height="wrap_content"
+            android:text="@string/a8" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+
 </LinearLayout>

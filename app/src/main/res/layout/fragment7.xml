@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/a7"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="
+        这个是我们项目的github地址:
+        https://github.com/ZoeSj/WerbNewsBBC.git
+        这个是我的CSDN博客,如果你们想要对这个项目有
+        更深入的了解,可以关注看看,我把我在搭建过程中
+        遇到的错误以及笔记都写在这里了,可以参考参考.
+        地址:http://my.csdn.net/?ref=toolbar
+        如果你们有建议很高兴给我留言!"
+        />
+
+</LinearLayout>

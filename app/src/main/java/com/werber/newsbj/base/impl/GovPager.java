@@ -1,97 +1,130 @@
 package com.werber.newsbj.base.impl;
 
 import android.app.Activity;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
+import android.text.TextUtils;
 import android.view.View;
-import android.webkit.WebChromeClient;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
-import android.widget.ProgressBar;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.FrameLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.werber.newsbj.R;
 import com.werber.newsbj.base.BasePager;
 
-public class GovPager extends BasePager {
+public class GovPager extends BasePager implements View.OnClickListener{
 
-    private WebView show_wb;
-    private ProgressBar webView_pb;
+    private Button Btton_a1;
+    private Button Btton_a2;
+    private Button Btton_a3;
+    private Button Btton_a4;
+    private Button Btton_a5;
+    private Button Btton_a6;
+    private Button Btton_a7;
+    private TextView Activity_tv;
+    private EditText Activity_et;
+    private Button Activity_callChild;
+    private FrameLayout temp;
+    private FragmentManager fragmentManager;
+    private com.werber.newsbj.base.impl.fragment1 fragment1;
+
     public GovPager(Activity activity) {
-
         super(activity);
     }
 
     @Override
     public void initData() {
-        mTvTitle.setText("七嘴八舌");
+        mTvTitle.setText("成员介绍");
         mImgBtnMenu.setVisibility(View.INVISIBLE);
         setSlidingMenuEnable(false);
-        View view=View.inflate(mActivity, R.layout.govpager,null);
-        show_wb = (WebView) view.findViewById(R.id.show_wb);
-        webView_pb = (ProgressBar) view.findViewById(R.id.webView_pb);
-        show_wb.loadUrl("http://115.159.66.239/food/");
-        initWebview();
-//        使用webViewSettings对webVIew进行一系列初始化的设置
-        initWebViewSettings();
+        View view = View.inflate(mActivity, R.layout.govpager, null);
+       /* TextView text=new TextView(mActivity);
+        text.setText("设置中心");
+        text.setTextSize(25);
+        text.setTextColor(Color.RED);
+        text.setGravity(Gravity.CENTER);*/
+        Btton_a1 = (Button)view.findViewById(R.id.Btton_a1);
+        Btton_a2 = (Button) view.findViewById(R.id.Btton_a2);
+        Btton_a3 = (Button) view.findViewById(R.id.Btton_a3);
+        Btton_a4 = (Button) view.findViewById(R.id.Btton_a4);
+        Btton_a5 = (Button) view.findViewById(R.id.Btton_a5);
+        Btton_a6 = (Button) view.findViewById(R.id.Btton_a6);
+        Btton_a7 = (Button) view.findViewById(R.id.Btton_a7);
+        Activity_tv = (TextView) view.findViewById(R.id.Activity_tv);
+        Activity_et = (EditText) view.findViewById(R.id.Activity_et);
+        Activity_callChild = (Button) view.findViewById(R.id.Activity_callChild);
+        temp = (FrameLayout) view.findViewById(R.id.temp);
+
+        Btton_a1.setOnClickListener(this);
+        Btton_a2.setOnClickListener(this);
+        Btton_a3.setOnClickListener(this);
+        Btton_a4.setOnClickListener(this);
+        Btton_a5.setOnClickListener(this);
+        Btton_a6.setOnClickListener(this);
+        Btton_a7.setOnClickListener(this);
+        Activity_callChild.setOnClickListener(this);
+
+        extracted();
         //添加到Content中
         mFlContent.addView(view);
+
     }
-    /**
-     * 使用webView对象,进行的一些初始化设置
-     */
-    private void initWebview() {
-//        此方法的作用是,当在webView进点击时,不跳转到游览器的设置(也就是不打开新的Activity),而是在本app里进行操作
-        show_wb.setWebViewClient(new WebViewClient() {
-            /**
-             * 给WebView加一个事件监听对象（WebViewClient)并重写shouldOverrideUrlLoading，
-             * 可以对网页中超链接按钮的响应
-             * 当按下某个连接时WebViewClient会调用这个方法，并传递参数：当前响应的的url地址
-             */
-            @Override
-            public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                // 此处可添加一些逻辑：是否拦截此url，自行处理
-                // 下方2行代码是指在当前的webview中跳转到新的url
-                view.loadUrl(url);
-                return true;
 
-            }
-        });
-//        触摸焦点起作用（如果不设置，则在点击网页文本输入框时，不能弹出软键盘及不响应其他的一些事件
-        show_wb.requestFocus();
+    private void extracted() {
+        fragment1 = new fragment1();
+        fragmentManager = mActivity.getFragmentManager();
+        FragmentTransaction beginTransaction = fragmentManager.beginTransaction();
+        beginTransaction.replace(R.id.temp, fragment1);
+        beginTransaction.commit();
+    }
+    @Override
+    public void onClick(View view) {
+        fragmentManager = mActivity.getFragmentManager();
+        FragmentTransaction beginTransaction = fragmentManager.beginTransaction();
 
-//      该监听事件是指UI(界面)发送改变时进行各监听.
-        show_wb.setWebChromeClient(new WebChromeClient() {
-            //     在WebView开始加载网页时，显示进度框；加载完毕时，隐藏进度框
-            public void onProgressChanged(WebView view, int newProgress) {
-//                进度条我们在布局文件里设置的是隐藏,在这里我们要让他显示出来
-                webView_pb.setVisibility(View.VISIBLE);
-//                加载进度条的进度
-                webView_pb.setProgress(newProgress);
-//                当进度条加载到一百时,我们要把他进行隐藏
-                if (newProgress == 100) {
-                    webView_pb.setVisibility(View.GONE);
-                }
-                super.onProgressChanged(view, newProgress);
-            }
+        switch (view.getId()) {
+            case R.id.Btton_a1:
+                extracted();
+                break;
+            case R.id.Btton_a2:
+                fragment2 fragement2 = new fragment2();
+                beginTransaction.replace(R.id.temp, fragement2);
+                break;
+            case R.id.Btton_a3:
+                fragment3 fragment3 = new fragment3();
+                beginTransaction.replace(R.id.temp, fragment3);
+                break;
+            case R.id.Btton_a4:
+                fragment4 fragment4 = new fragment4();
+                beginTransaction.replace(R.id.temp, fragment4);
+                break;
+            case R.id.Btton_a5:
+                fragment5 fragment5 = new fragment5();
+                beginTransaction.replace(R.id.temp, fragment5);
+                break;
+            case R.id.Btton_a6:
+                fragment6 fragment6 = new fragment6();
+                beginTransaction.replace(R.id.temp, fragment6);
+                break;
+            case R.id.Btton_a7:
+                fragment7 fragment7 = new fragment7();
+                beginTransaction.replace(R.id.temp, fragment7);
+                break;
+            case R.id.Activity_callChild:
 
-            //通过title的参数,可以获取到访问网页的头.
-            @Override
-            public void onReceivedTitle(WebView view, String title) {
-                Toast.makeText(mActivity, "加载" + title + "中", Toast.LENGTH_SHORT).show();
-                super.onReceivedTitle(view, title);
-            }
-        });}
+                break;
+        }
+        beginTransaction.commit();
+    }
 
-    /**
-     * 对网页控件进行一系列的初始化设置
-     */
-
-    private void initWebViewSettings() {
-        WebSettings webSet = show_wb.getSettings();
-//        webSet.setDefaultZoom(WebSettings.ZoomDensity.MEDIUM);
-        webSet.setJavaScriptEnabled(true);
-        webSet.setSupportZoom(true);
-//        是webView只加载文字,而不加载图片,为用户省流量.
-//        webSet.setBlockNetworkImage(true);
+    private void submit() {
+        // validate
+        String et = Activity_et.getText().toString().trim();
+        if (TextUtils.isEmpty(et)) {
+            Toast.makeText(mActivity, "输入不能为null", Toast.LENGTH_SHORT).show();
+            return;
+        }
     }
 }

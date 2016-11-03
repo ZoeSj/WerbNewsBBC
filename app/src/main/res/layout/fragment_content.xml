@@ -36,14 +36,14 @@
             style="@style/BottomTabStyle"
             android:drawableTop="@drawable/btn_tab_smart_select"
             android:textColor="@drawable/btn_tab_text_select"
-            android:text="校内广播"/>
+            android:text="娱乐时间"/>
 
         <RadioButton
             android:id="@+id/rb_gov"
             style="@style/BottomTabStyle"
             android:drawableTop="@drawable/btn_tab_gov_select"
             android:textColor="@drawable/btn_tab_text_select"
-            android:text="七嘴八舌"/>
+            android:text="成员介绍"/>
 
         <RadioButton
             android:id="@+id/rb_setting"

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/a7"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="项目介绍:
+            这是一个新闻客户端的App.我们团队根
+         据这个新闻客户端的框架把这个Demo重新设
+         计了,打造一个属于安徽新华学院的新华BBC.
+         这个新华BBC的主要功能模块包括首页的新华
+         BBC,这里是一个webview,打开的网站就是我
+         为这个App编写的一个网站,不过还在施工中,
+         然后还包括休闲娱乐模块,课间互动,校园广
+         播模块,不过由于时间问题这些模块还在施工.
+         我们希望最终能完成一个专门给校园师生使用
+         的一款App."/>
+
+</LinearLayout>
