@@ -13,7 +13,10 @@ import android.widget.Toast;
 
 import com.werber.newsbj.R;
 import com.werber.newsbj.base.BasePager;
-
+/**
+ * 这个是一个成员介绍页面,主要应用了fragement
+ * Created by Zoe on 2016/11/3.
+ */
 public class GovPager extends BasePager implements View.OnClickListener{
 
     private Button Btton_a1;

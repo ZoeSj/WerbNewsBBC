@@ -88,12 +88,12 @@
         "source": "F:\\AndroidCode\\WerbNews\\ViewPagerIndicatorLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\drawable-mdpi\\abc_ic_menu_moreoverflow_mtrl_alpha.png"
     },
     {
-        "merged": "F:\\AndroidCode\\WerbNews\\ViewPagerIndicatorLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\vpi__tab_selected_focused_holo.9.png",
-        "source": "F:\\AndroidCode\\WerbNews\\ViewPagerIndicatorLibrary\\src\\main\\res\\drawable-mdpi\\vpi__tab_selected_focused_holo.9.png"
-    },
-    {
         "merged": "F:\\AndroidCode\\WerbNews\\ViewPagerIndicatorLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
         "source": "F:\\AndroidCode\\WerbNews\\ViewPagerIndicatorLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\drawable-mdpi\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "F:\\AndroidCode\\WerbNews\\ViewPagerIndicatorLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\vpi__tab_selected_focused_holo.9.png",
+        "source": "F:\\AndroidCode\\WerbNews\\ViewPagerIndicatorLibrary\\src\\main\\res\\drawable-mdpi\\vpi__tab_selected_focused_holo.9.png"
     },
     {
         "merged": "F:\\AndroidCode\\WerbNews\\ViewPagerIndicatorLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",

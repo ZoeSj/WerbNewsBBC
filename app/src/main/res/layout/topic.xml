@@ -1,4 +1,5 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -6,81 +7,21 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="horizontal"
-    tools:context=".MainActivity" >
+    tools:context="mystudy.com.notification.MainActivity">
 
-    <LinearLayout
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <Button
-            android:id="@+id/Btton_a1"
-            android:background="@drawable/bg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/a1" />
-        <Button
-            android:id="@+id/Btton_a2"
-            android:background="@drawable/bg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/a2" />
-        <Button
-            android:id="@+id/Btton_a3"
-            android:background="@drawable/bg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/a3" />
-        <Button
-            android:id="@+id/Btton_a4"
-            android:background="@drawable/bg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/a4" />
-        <Button
-            android:id="@+id/Btton_a5"
-            android:background="@drawable/bg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/a5" />
-        <Button
-            android:id="@+id/Btton_a6"
-            android:background="@drawable/bg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/a6" />
-        <Button
-            android:id="@+id/Btton_a7"
-            android:background="@drawable/bg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/a7" />
+        android:text="在状态栏里显示通知"
+        android:id="@+id/show_bt"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
-        <TextView
-            android:id="@+id/Activity_tv"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Activity传来的数据"/>
-
-        <EditText
-            android:id="@+id/Activity_et"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="callMe" />
-
-        <Button
-            android:id="@+id/Activity_callChild"
-            android:layout_width="wrap_content"
-            android:background="@drawable/bg"
-            android:layout_height="wrap_content"
-            android:text="@string/a8" />
-
-    </LinearLayout>
-
-    <FrameLayout
-        android:id="@+id/temp"
+    <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-    </FrameLayout>
-
-</LinearLayout>
+        android:layout_height="wrap_content"
+        android:text="取消状态栏里的通知"
+        android:id="@+id/vanish_bt"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

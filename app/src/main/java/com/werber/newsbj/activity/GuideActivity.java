@@ -21,13 +21,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by acer-pc on 2015/11/9.
+ * 新手引导页
+ * Created by Zoe on 2016/11/1.
  */
 public class GuideActivity extends AppCompatActivity {
-
+    //引导页图片id数组
     private static final int[] mImageId = new int[]{R.mipmap.guide_1, R.mipmap.guide_2, R.mipmap.guide_3};
     private ViewPager mViewPager;
-    private List<ImageView> mImageList;
+    //怎样维护这个对象数组?
+    private List<ImageView> mImageList;//imageview的集合
     private LinearLayout ll_point;//灰色圆点的父控件
     private int mPointWidth;//圆点间距
     private View viewRedPoint;//小红点
@@ -54,7 +56,8 @@ public class GuideActivity extends AppCompatActivity {
 
 
         initView();
-        mViewPager.setAdapter(new GuideAdapter());
+        mViewPager.setAdapter(new GuideAdapter());//设置数据
+        //设置页面滑动的一个监听
         mViewPager.addOnPageChangeListener(new GuidePageListener());
     }
 
@@ -131,6 +134,7 @@ public class GuideActivity extends AppCompatActivity {
     class GuideAdapter extends PagerAdapter {
 
         @Override
+        //返回item的个数
         public int getCount() {
             return mImageId.length;
         }
@@ -141,12 +145,15 @@ public class GuideActivity extends AppCompatActivity {
         }
 
         @Override
+        //初始化item的布局
         public Object instantiateItem(ViewGroup container, int position) {
-            container.addView(mImageList.get(position));
+           //获取这个ImageViewer,之前通过集合已经把要使用的创建好了,用的时候直接拿过来用
+            container.addView(mImageList.get(position));//把这个对象塞给container容器
             return mImageList.get(position);
         }
 
         @Override
+        //销毁item布局
         public void destroyItem(ViewGroup container, int position, Object object) {
             container.removeView(mImageList.get(position));
         }

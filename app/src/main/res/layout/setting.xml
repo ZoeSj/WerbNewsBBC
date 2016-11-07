@@ -2,85 +2,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="horizontal"
-    tools:context=".MainActivity" >
+    android:orientation="vertical" >
 
-    <LinearLayout
+  <ListView
+      android:id="@+id/lv"
+      android:layout_width="fill_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:divider="@null"
+      android:listSelector="@android:color/transparent"
+      android:transcriptMode="alwaysScroll" >
+  </ListView>
+
+  <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/sendText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/send_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <Button
-            android:id="@+id/Btton_a1"
-            android:background="@drawable/bg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/a1" />
-        <Button
-            android:id="@+id/Btton_a2"
-            android:background="@drawable/bg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/a2" />
-        <Button
-            android:id="@+id/Btton_a3"
-            android:background="@drawable/bg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/a3" />
-        <Button
-            android:id="@+id/Btton_a4"
-            android:background="@drawable/bg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/a4" />
-        <Button
-            android:id="@+id/Btton_a5"
-            android:background="@drawable/bg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/a5" />
-        <Button
-            android:id="@+id/Btton_a6"
-            android:background="@drawable/bg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/a6" />
-        <Button
-            android:id="@+id/Btton_a7"
-            android:background="@drawable/bg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/a7" />
-
-        <TextView
-            android:id="@+id/Activity_tv"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Activity传来的数据"/>
-
-        <EditText
-            android:id="@+id/Activity_et"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="callMe" />
-
-        <Button
-            android:id="@+id/Activity_callChild"
-            android:layout_width="wrap_content"
-            android:background="@drawable/bg"
-            android:layout_height="wrap_content"
-            android:text="@string/a8" />
-
-    </LinearLayout>
-
-    <FrameLayout
-        android:id="@+id/temp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-    </FrameLayout>
+        android:text="@string/send"
+        />
+  </LinearLayout>
 
 </LinearLayout>

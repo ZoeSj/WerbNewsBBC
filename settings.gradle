@@ -1,7 +1,8 @@
-include ':slidingmenulibrary', ':smartlibrary', ':PullToRefresh', ':app11', ':daogenerator', ':app', ':notification', ':webview', ':minibrowser', ':Angry Birds'
+include ':slidingmenulibrary', ':smartlibrary', ':PullToRefresh', ':app11', ':daogenerator', ':app', ':notification', ':webview', ':minibrowser', ':Angry Birds', ':hulufragment', ':baidumap', ':baidumapdemo', ':mapTest', ':CircleImgae', ':User'
 include ':ViewPagerIndicatorLibrary'
 
 
 include ':getMyPhoneNumber'
 include ':tulingDemo'
 include ':helloNotes'
+include ':oschinaandroidapp'

@@ -7,10 +7,9 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
-import com.werber.newsbj.activity.MainActivity;
-
+/**
+ * Created by Zoe on 2016/11/2.
+ */
 /**
  * Fragment的基类
  */
@@ -41,6 +40,7 @@ public abstract class BaseFragment extends Fragment {
     }
 
     //初始化布局必须实现
+    //初始化布局,必须由子类去实现
     public abstract View initViews();
 
     //初始化数据，不是必须的

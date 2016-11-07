@@ -16,7 +16,8 @@ import com.werber.newsbj.bean.NewsData;
 import java.util.List;
 
 /**
- * Created by acer-pc on 2015/11/11.
+ * 侧边栏Fragment
+ * Created by Zoe on 2016/11/2.
  */
 public class LeftMenuFragment extends BaseFragment {
 

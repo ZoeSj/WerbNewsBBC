@@ -16,7 +16,9 @@ import com.werber.newsbj.R;
 import com.werber.newsbj.base.BasePager;
 
 /**
- * Created by acer-pc on 2015/11/13.
+ *首页
+ * 也叫做新华BBC,这里面主要包裹的内容是一个webview网页.
+ * Created by Zoe on 2016/11/3.
  */
 public class HomePager extends BasePager {
 

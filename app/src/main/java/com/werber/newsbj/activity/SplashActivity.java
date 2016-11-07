@@ -9,7 +9,10 @@ import android.widget.RelativeLayout;
 
 import com.werber.newsbj.R;
 import com.werber.newsbj.utils.PrefUtils;
-
+/**
+ * 闪屏页面
+ * Created by Zoe on 2016/11/1.
+ */
 public class SplashActivity extends AppCompatActivity {
 
     RelativeLayout splash_rl;

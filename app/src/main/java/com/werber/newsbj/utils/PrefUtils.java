@@ -4,7 +4,9 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 /**
- * SharedPreferences的工具类
+ * 封装的工具类
+ * SharedPreferences的封装
+ * Created by Zoe on 2016/11/1.
  */
 public class PrefUtils {
 

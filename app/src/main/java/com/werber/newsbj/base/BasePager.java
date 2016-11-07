@@ -11,7 +11,9 @@ import com.werber.newsbj.R;
 import com.werber.newsbj.activity.MainActivity;
 
 /**
- * 界面中5个子页面的基类
+ * 就是一个类
+ * 五个标签类的基类
+ * Created by Zoe on 2016/11/3.
  */
 public class BasePager {
 

@@ -25,7 +25,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by acer-pc on 2015/11/13.
+ * 这是新闻中心页面,也是最难的一个页面.里面内容很多
+ * Created by Zoe on 2016/11/3.
  */
 public class NewsPager extends BasePager {
 
