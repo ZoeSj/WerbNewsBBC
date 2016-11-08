@@ -5,25 +5,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/path_et"
-            android:layout_width="match_parent"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:hint="输入访问网址,直接从www开始即可"
-            android:singleLine="true"/>
-        <Button
-            android:id="@+id/load_btn"
-            android:onClick="load"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="加载"/>
-    </LinearLayout>
 
     <ProgressBar
         android:id="@+id/webView_pb"
@@ -47,27 +28,33 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         >
-        <Button
+        <ImageButton
             android:id="@+id/advance_btn"
             android:onClick="advance"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="前进"/>
-        <Button
+            android:text="前进"
+            android:src="@drawable/button_blue_last"
+            android:background="#00000000"/>
+        <ImageButton
             android:id="@+id/reload_btn"
             android:onClick="reload"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="刷新"/>
-        <Button
+            android:text="刷新"
+            android:src="@drawable/button_blue_repeat"
+            android:background="#00000000"/>
+        <ImageButton
             android:id="@+id/retreat_btn"
             android:onClick="retreat"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="后退"/>
+            android:text="后退"
+            android:src="@drawable/button_blue_first"
+            android:background="#00000000"/>
 
     </LinearLayout>
 </LinearLayout>

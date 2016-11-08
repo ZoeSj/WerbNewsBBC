@@ -1,14 +1,13 @@
 package com.werber.newsbj.base.impl;
 
 import android.app.Activity;
-import android.text.TextUtils;
 import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -22,11 +21,11 @@ import com.werber.newsbj.base.BasePager;
  */
 public class HomePager extends BasePager {
 
-    public Button button;
-    public Button load_btn;
-    public Button advance_btn;
-    public Button reload_btn;
-    public Button  retreat_btn;
+    public ImageButton button;
+    public ImageButton load_btn;
+    public ImageButton advance_btn;
+    public ImageButton reload_btn;
+    public ImageButton  retreat_btn;
 
     private WebView show_wb;
     private EditText path_et;
@@ -45,14 +44,14 @@ public class HomePager extends BasePager {
         View view=View.inflate(mActivity, R.layout.homepager,null);
 
         show_wb = (WebView) view.findViewById(R.id.show_wb);
-        path_et = (EditText) view.findViewById(R.id.path_et);
-        load_btn = (Button) view.findViewById(R.id.load_btn);
-        advance_btn=(Button) view.findViewById(R.id.advance_btn);
-        reload_btn=(Button)view.findViewById(R.id.reload_btn);
-        retreat_btn=(Button)view.findViewById(R.id.retreat_btn);
+       // path_et = (EditText) view.findViewById(R.id.path_et);
+       // load_btn = (Button) view.findViewById(R.id.load_btn);
+        advance_btn=(ImageButton) view.findViewById(R.id.advance_btn);
+        reload_btn=(ImageButton)view.findViewById(R.id.reload_btn);
+        retreat_btn=(ImageButton)view.findViewById(R.id.retreat_btn);
 
 
-        load_btn.setOnClickListener(new View.OnClickListener() {
+       /* load_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String trim = path_et.getText().toString().trim();
@@ -63,7 +62,7 @@ public class HomePager extends BasePager {
 //                加载用户输入的网址
                 show_wb.loadUrl("http://"+trim);
             }
-        });
+        });*/
         advance_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

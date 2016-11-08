@@ -40,12 +40,12 @@
         "source": "F:\\AndroidCode\\WerbNews\\ViewPagerIndicatorLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
-        "merged": "F:\\AndroidCode\\WerbNews\\ViewPagerIndicatorLibrary\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
-        "source": "F:\\AndroidCode\\WerbNews\\ViewPagerIndicatorLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\layout\\abc_action_bar_title_item.xml"
-    },
-    {
         "merged": "F:\\AndroidCode\\WerbNews\\ViewPagerIndicatorLibrary\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
         "source": "F:\\AndroidCode\\WerbNews\\ViewPagerIndicatorLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "F:\\AndroidCode\\WerbNews\\ViewPagerIndicatorLibrary\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "F:\\AndroidCode\\WerbNews\\ViewPagerIndicatorLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\layout\\abc_action_bar_title_item.xml"
     },
     {
         "merged": "F:\\AndroidCode\\WerbNews\\ViewPagerIndicatorLibrary\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",

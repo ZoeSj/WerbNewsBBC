@@ -37,7 +37,7 @@ public class SplashActivity extends AppCompatActivity {
     private void startAnim() {
         //缩放动画
         ScaleAnimation sa=new ScaleAnimation(2,1,2,1);
-        sa.setDuration(1000);
+        sa.setDuration(1000);//设置缩放的执行时间
         sa.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {

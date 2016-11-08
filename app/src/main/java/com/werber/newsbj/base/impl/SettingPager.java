@@ -38,7 +38,7 @@ public class SettingPager extends BasePager implements View.OnClickListener, Htt
 
     @Override
     public void initData() {
-        mTvTitle.setText("个人设置");
+        mTvTitle.setText("小灵撩妹");
         mImgBtnMenu.setVisibility(View.INVISIBLE);
         setSlidingMenuEnable(false);
         View view = View.inflate(mActivity, R.layout.setting, null);

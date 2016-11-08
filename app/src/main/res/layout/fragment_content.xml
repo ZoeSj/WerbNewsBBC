@@ -36,7 +36,7 @@
             style="@style/BottomTabStyle"
             android:drawableTop="@drawable/btn_tab_smart_select"
             android:textColor="@drawable/btn_tab_text_select"
-            android:text="娱乐时间"/>
+            android:text="消息推送"/>
 
         <RadioButton
             android:id="@+id/rb_gov"
@@ -50,7 +50,7 @@
             style="@style/BottomTabStyle"
             android:drawableTop="@drawable/btn_tab_setting_select"
             android:textColor="@drawable/btn_tab_text_select"
-            android:text="个人设置"/>
+            android:text="小灵聊天"/>
     </RadioGroup>
 
 </LinearLayout>
